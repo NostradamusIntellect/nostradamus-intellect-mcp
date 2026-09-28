@@ -97,13 +97,26 @@ the live record.
 
 ## Work with us
 
+Nostradamus Intellect is built in the open by one founder. We are looking for people:
+
 - **Builders:** see [where we need help](CONTRIBUTING.md) — a remote (HTTP) MCP endpoint, a Python client, framework
   adapters, reliability diagrams from the record, translations. Issues and pull requests are welcome. We are open to
-  people who want to join the founding team.
-- **Newsrooms, researchers, forecasting teams and AI-evaluation groups:** the record as data, commissioned questions
-  graded in public, calibration training — [nostradamusintellect@proton.me](mailto:nostradamusintellect@proton.me)
+  people who want to join the founding team: engineers, forecasters, data and research people.
+- **Forecasters and researchers:** seal your own numbers against the record through the
+  [Observer Protocol](https://nostradamusintellect.com/observers) and be graded by the same rule on the same date.
+  A sharp critique of the method is the most useful thing you can send.
+- **Newsrooms, platforms and institutions:** the record as data, embeddable cards, questions commissioned by you and
+  sealed and graded in public, calibration training for teams.
+- **Investors:** [nostradamusintellect@proton.me](mailto:nostradamusintellect@proton.me).
+- **Donors and supporters:** reading the record is free forever, with no ads and no trackers. If you want to help keep
+  it that way, write to us.
+- **Agents:** connect through this MCP server, or read [/engine/record.json](https://nostradamusintellect.com/engine/record.json)
+  and [/llms.txt](https://nostradamusintellect.com/llms.txt). No key needed.
 - **Found a wrong number, a broken criterion or a seal that does not verify?** Open an issue. Corrections are public and
   dated; a sealed probability is never rewritten.
+
+Nothing can be bought: partnerships, sponsorship, donations and investment never change a probability, a date or a
+criterion.
 
 [nostradamusintellect.com](https://nostradamusintellect.com) · [X @Nostradamusmind](https://x.com/Nostradamusmind) ·
 [nostradamusintellect@proton.me](mailto:nostradamusintellect@proton.me) · [En français](https://nostradamusintellect.com/fr)
