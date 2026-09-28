@@ -2,7 +2,7 @@
 
 ## 0.1.0 — 2026-09-28
 
-First public release.
+First public release, on npm as [`nostradamus-intellect`](https://www.npmjs.com/package/nostradamus-intellect).
 
 - `ni` CLI and a stdio MCP server in one file, no dependencies.
 - Eleven read-only tools: `record_summary`, `search_cards`, `get_card`, `resolution_calendar`, `verify_seal`,

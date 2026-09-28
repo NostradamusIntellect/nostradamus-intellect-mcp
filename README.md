@@ -1,5 +1,8 @@
 # Nostradamus Intellect — MCP server and CLI
 
+[![npm](https://img.shields.io/npm/v/nostradamus-intellect?color=4fd2ff&label=npm)](https://www.npmjs.com/package/nostradamus-intellect)
+[![license](https://img.shields.io/badge/license-Apache--2.0-9fb4c9)](LICENSE)
+
 Ask the public record of **Nostradamus Intellect** from Claude, Cursor, any MCP client or your terminal: every forecast
 sealed with a probability, a resolution date and a condition that would prove it wrong — then graded in public.
 Search the record, read any card whole, see what is judged next, check whether a headline is an event or an echo,
@@ -25,7 +28,7 @@ on the site — paying never changes a probability.
   "mcpServers": {
     "nostradamus-intellect": {
       "command": "npx",
-      "args": ["-y", "github:NostradamusIntellect/nostradamus-intellect-mcp", "mcp"]
+      "args": ["-y", "nostradamus-intellect", "mcp"]
     }
   }
 }
@@ -34,7 +37,7 @@ on the site — paying never changes a probability.
 **Claude Code:**
 
 ```bash
-claude mcp add nostradamus-intellect -- npx -y github:NostradamusIntellect/nostradamus-intellect-mcp mcp
+claude mcp add nostradamus-intellect -- npx -y nostradamus-intellect mcp
 ```
 
 Then ask things like *"What does the Nostradamus Intellect record say about a Ukraine ceasefire?"*,
@@ -61,16 +64,18 @@ All tools are annotated `readOnlyHint: true`. Nothing here can write to the reco
 ## CLI
 
 ```bash
-npx -y github:NostradamusIntellect/nostradamus-intellect-mcp summary
-npx -y github:NostradamusIntellect/nostradamus-intellect-mcp cards ukraine
-npx -y github:NostradamusIntellect/nostradamus-intellect-mcp card CAL-12
-npx -y github:NostradamusIntellect/nostradamus-intellect-mcp calendar 10
-npx -y github:NostradamusIntellect/nostradamus-intellect-mcp verify all
-npx -y github:NostradamusIntellect/nostradamus-intellect-mcp echo "strikes on ukraine"
+npx -y nostradamus-intellect summary
+npx -y nostradamus-intellect cards ukraine
+npx -y nostradamus-intellect card CAL-12
+npx -y nostradamus-intellect calendar 10
+npx -y nostradamus-intellect verify all
+npx -y nostradamus-intellect echo "strikes on ukraine"
 ```
 
-Or install it once — `npm install -g github:NostradamusIntellect/nostradamus-intellect-mcp` — then run `ni summary`,
-`ni card ZUC-01`, `ni verify CAL-12`, `ni loom`. Add `--json` to any command for raw JSON.
+Or install it once — `npm install -g nostradamus-intellect` — then run `ni summary`, `ni card ZUC-01`,
+`ni verify CAL-12`, `ni loom`. Add `--json` to any command for raw JSON. (If another tool already owns the `ni`
+command on your machine — `@antfu/ni` does — stay with `npx`.) The same code straight from this repository:
+`npx -y github:NostradamusIntellect/nostradamus-intellect-mcp summary`.
 
 ```
 $ ni verify all
