@@ -1,0 +1,41 @@
+{
+  "name": "nostradamus-intellect",
+  "version": "0.1.0",
+  "description": "Nostradamus Intellect from the command line and as an MCP server: sealed, dated, falsifiable forecasts graded in public — read, search and verify the record.",
+  "type": "module",
+  "bin": {
+    "ni": "ni.mjs"
+  },
+  "files": [
+    "ni.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node selftest.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "forecasting",
+    "calibration",
+    "brier-score",
+    "prediction",
+    "falsifiability",
+    "opentimestamps",
+    "ai-agents",
+    "cli"
+  ],
+  "homepage": "https://nostradamusintellect.com",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NostradamusIntellect/nostradamus-intellect-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NostradamusIntellect/nostradamus-intellect-mcp/issues"
+  }
+}
