@@ -13,7 +13,7 @@
    ni loom                      the engine's 36 strands right now
    ni pressure                  which strands are straining past the published alert bar
    ni alerts                    the public alert log
-   ni wire [n]                  the latest headlines from the eight live wires
+   ni wire [n]                  the latest headlines from the live wires (29 since engine v3)
    ni echo <headline words>     event or echo? how many independent wires carried a story
    ni sensors                   the public sensor readings
    ni mcp                       run as an MCP server over stdio (for Claude, Cursor, any MCP client)
@@ -258,7 +258,7 @@ const TOOLS = [
   {
     name: 'wire',
     title: 'The latest headlines',
-    description: 'The newest headlines from the eight live wires the engine reads (BBC World, UN News, NASA, ECB, Al Jazeera, NPR World, USGS, Wikimedia), as cached every ten minutes.',
+    description: 'The newest headlines from the live wires the engine reads, as cached every ten minutes. Eight general wires (BBC World, UN News, NASA, ECB, Al Jazeera, NPR World, USGS, Wikimedia) and, since engine v3 on 2026-10-17, twenty-one technology, AI, finance and crypto wires; each item carries its feed tag and group.',
     inputSchema: { type: 'object', properties: { limit: { type: 'integer', minimum: 1, maximum: 24, default: 12 } }, additionalProperties: false },
     run: async ({ limit = 12 } = {}) => {
       const n = await get('/api/news')
@@ -299,7 +299,7 @@ const TOOLS = [
       return {
         query: text,
         matches: [],
-        reading: seen.length ? 'seen on the wire, but it moved no strand — the lexicon matched nothing in it' : 'not carried by the eight wires in the last 48 hours',
+        reading: seen.length ? 'seen on the wire, but it moved no strand — the lexicon matched nothing in it' : 'not carried by the wires in the last 48 hours',
         seen_on_wire: seen,
       }
     },

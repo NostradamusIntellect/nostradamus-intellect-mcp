@@ -55,7 +55,7 @@ Then ask things like *"What does the Nostradamus Intellect record say about a Uk
 | `loom_state` | The engine's 36 named strands (6 threads × 6), stepping every six hours on a published rule |
 | `sector_pressure` | Strands straining past the published alert bar (z ≥ 2.5, ≥ 3 independent wires, floor 0.12 over 72 h) |
 | `alert_log` | The append-only public alert log |
-| `wire` | The newest headlines from the eight live wires the engine reads |
+| `wire` | The newest headlines from the live wires the engine reads (29 since engine v3 on 2026-10-17: the eight general ones plus technology, AI, finance and crypto) |
 | `event_or_echo` | How many independent wires carried a story, and the confirmation weight the engine gave it |
 | `sensors` | The public sensor readings (the lead sensor of each group) |
 
